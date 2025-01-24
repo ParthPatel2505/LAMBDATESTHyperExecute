@@ -1,4 +1,4 @@
-Welcome to the LAMBDATEST(https://github.com/ParthPatel2505/LAMBDATEST) repository! This project is hosted on Gitpod and integrates with LambdaTest for automated testing.
+Welcome to the LAMBDATESTHyperExecute(https://github.com/ParthPatel2505/LAMBDATESTHyperExecute.git) repository! This project is hosted on Gitpod and integrates with LambdaTest for automated testing.
 
 Table of Contents
 
@@ -16,7 +16,7 @@ Features
 Getting Started
 To get started with this project:
 -Fork this repository (or clone it) to your GitHub account.
--Open the repository in Gitpod by navigating to Gitpod Workspace(https://parthpatel25-lambdatest-rmg454a4dvv.ws-us117.gitpod.io/).
+-Open the repository in Gitpod by navigating to Gitpod Workspace([https://parthpatel25-lambdatest-rmg454a4dvv.ws-us117.gitpod.io/](https://debug-parthpatel2-lambdatesth-4vl7lah5l2k.ws-us117.gitpod.io/)).
 
 Prerequisites
 Make sure you have the following installed:
@@ -47,20 +47,19 @@ Running Tests in Gitpod
 To run the Playwright tests:
 -npx playwright test
 
-For running specific tests in chromium:
--npx playwright test Testscenario1.spec.js --project=chromium
--npx playwright test Testscenario2.spec.js --project=chromium
--npx playwright test Testscenario3.spec.js --project=chromium
-
-LambdaTest Integration
--If you are using LambdaTest for cross-browser testing, make sure to link your LambdaTest credentials and configure them according to their documentation.
 
 For running all scenarios using .gitpod.yml
--Open the repository in Gitpod by navigating to Gitpod Workspace(https://parthpatel25-lambdatest-rmg454a4dvv.ws-us117.gitpod.io/) and manually run the .gitpod.yml file
+-Open the repository in Gitpod by navigating to Gitpod Workspace([https://parthpatel25-lambdatest-rmg454a4dvv.ws-us117.gitpod.io/](https://debug-parthpatel2-lambdatesth-4vl7lah5l2k.ws-us117.gitpod.io/)) and manually run the .gitpod.yml file
 
 License
--This project is licensed under the MIT License.
+-This project is licensed under the ISC License.
 
 set HYPEREXECUTE_PLATFORM=windows
 set LT_USERNAME=parth.pateltntra
 set LT_ACCESS_KEY=e5NcBKPoyQpKuhwZQZXnQgRnvGaEQkwhoklJPG54Y3VIqCz540
+
+Execution with HyperExecute CLI
+./hyperexecute --user="$LT_USERNAME" --key="$LT_ACCESS_KEY" --config ../win11/.hyperexecute_autosplits.yaml
+
+
+
