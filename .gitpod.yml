@@ -14,7 +14,7 @@ tasks:
     command: echo "Dependencies installed!"
 
   - name: Run Playwright Tests
-    command: npx playwright test
+    command: npm install && npx playwright test
 
 ports:
   - port: 3000
