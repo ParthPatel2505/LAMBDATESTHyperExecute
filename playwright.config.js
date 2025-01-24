@@ -1,5 +1,7 @@
 const { devices } = require('@playwright/test')
+import dotenv from 'dotenv';
 
+dotenv.config();
 // Playwright config to run tests on LambdaTest platform and local
 const config = {
   testDir: 'tests',
@@ -41,6 +43,7 @@ const config = {
     //     viewport: { width: 1280, height: 720 }
     //   }
     // }
+ 
   ]
 }
 

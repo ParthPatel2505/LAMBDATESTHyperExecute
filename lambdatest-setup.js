@@ -1,6 +1,9 @@
 const base = require('@playwright/test')
 const path = require('path')
 const { chromium } = require('playwright')
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // LambdaTest capabilities
 const capabilities = {

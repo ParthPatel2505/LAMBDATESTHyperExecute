@@ -18,6 +18,6 @@ testDiscovery:
   type: raw
   mode: dynamic
   command: grep -lr 'describe' tests
-testRunnerCommand: npx playwright test $tests
+testRunnerCommand: npx playwright test
 
 jobLabel: [playwright-VanillaJS, win11, autosplit] 
