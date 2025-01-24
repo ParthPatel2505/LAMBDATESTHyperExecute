@@ -9,10 +9,16 @@ tasks:
     before: |
       # Download HyperExecute CLI for Windows (ensure the correct path)
       curl -s -o hyperexecute.exe https://downloads.lambdatest.com/hyperexecute/windows/hyperexecute.exe
-      chmod +x hyperexecute.exe
-
+      chmod +x hyperexecute.exe  # Make executable (ensure this command works on your system)
+      
       # Verify the binary is properly set
       echo "HyperExecute CLI downloaded and configured for Windows."
+      
+      # Check if hyperexecute.exe exists
+      if not exist "hyperexecute.exe" (
+        echo "Error: hyperexecute.exe was not downloaded properly."
+        exit /b 1
+      )
 
     init: |
       # Ensure the environment variables for LambdaTest credentials are set
@@ -26,10 +32,17 @@ tasks:
       )
 
       echo "Starting HyperExecute task on Windows..."
-
-      # Run HyperExecute with the appropriate arguments (make sure config file path is correct)
+      
+      # Run HyperExecute with the appropriate arguments
+      # Ensure the configuration file path is correct (make sure it exists)
+      if not exist "../win11/.hyperexecute_autosplits.yaml" (
+        echo "Error: Configuration file ../win11/.hyperexecute_autosplits.yaml not found."
+        exit /b 1
+      )
+      
+      # Run HyperExecute task with the correct parameters
       hyperexecute.exe --user="%LT_USERNAME%" --key="%LT_ACCESS_KEY%" ^
-                       --config win11/.hyperexecute_autosplits.yaml ^
+                       --config ../win11/.hyperexecute_autosplits.yaml ^
                        --download-artifacts ^
                        --force-clean-artifacts ^
                        --run-playwright-tests  # Ensure Playwright tests are triggered

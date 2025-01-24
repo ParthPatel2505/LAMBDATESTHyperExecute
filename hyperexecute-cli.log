@@ -1,2 +1,26 @@
 {"level":"error","time":"2025-01-24T15:38:48.894Z","caller":"globalconfigvalidator/setup.go:54","msg":"2025-01-24T15:38:48Z    error    \u001b[91mERR::NO::USER\u001b[0m     Unable to find LT username.    Unable to parse LT username. Use --user cli flag or LT_USERNAME environment variable"}
 {"level":"error","time":"2025-01-24T15:38:48.894Z","caller":"cmd/bin.go:103","msg":"2025-01-24T15:38:48Z    error    \u001b[91mERR::NO::USER\u001b[0m     Unable to find LT username."}
+{"level":"debug","time":"2025-01-24T18:33:24.541Z","caller":"cmd/bin.go:121","msg":"cli os: linux, cli arch: amd64"}
+{"level":"debug","time":"2025-01-24T18:33:24.867Z","caller":"cmd/bin.go:130","msg":"Upstream version details: {Name:cli Min:0.2.195 Max:0.2.251} "}
+{"level":"warn","time":"2025-01-24T18:33:24.868Z","caller":"globalconfigvalidator/setup.go:45","msg":"Found user credentials in env and cli flag both, credentials in env will be ignored"}
+{"level":"warn","time":"2025-01-24T18:33:24.868Z","caller":"globalconfigvalidator/setup.go:50","msg":"Found key credentials in env and cli flag both, credentials in env will be ignored"}
+{"level":"debug","time":"2025-01-24T18:33:25.984Z","caller":"core/lifecycle.go:104","msg":"Setting environment"}
+{"level":"debug","time":"2025-01-24T18:33:25.984Z","caller":"core/lifecycle.go:107","msg":"Parsing config"}
+{"level":"debug","time":"2025-01-24T18:33:25.984Z","caller":"yamlconfigmanager/setup.go:671","msg":"Custom location for .hyperexecute.yaml specified. Using: ../win11/.hyperexecute_autosplits.yaml"}
+{"level":"error","time":"2025-01-24T18:33:25.984Z","caller":"core/lifecycle.go:112","msg":"2025-01-24T18:33:24Z    error    \u001b[91mERR::NO::HTY\u001b[0m     Unable to find hyperexecute config file.    No file found at location ../win11/.hyperexecute_autosplits.yaml"}
+{"level":"debug","time":"2025-01-24T18:33:25.984Z","caller":"core/lifecycle.go:55","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2025-01-24T18:33:25.984Z","caller":"core/lifecycle.go:56","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2025-01-24T18:33:25.984Z","caller":"core/lifecycle.go:59","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2025-01-24T18:33:25.984Z","caller":"cmd/bin.go:369","msg":"Exiting application due to error \u001b[91mERR::NO::HTY\u001b[0m     Unable to find hyperexecute config file.    No file found at location ../win11/.hyperexecute_autosplits.yaml"}
+{"level":"debug","time":"2025-01-24T18:36:20.849Z","caller":"cmd/bin.go:121","msg":"cli os: linux, cli arch: amd64"}
+{"level":"debug","time":"2025-01-24T18:36:21.184Z","caller":"cmd/bin.go:130","msg":"Upstream version details: {Name:cli Min:0.2.195 Max:0.2.251} "}
+{"level":"warn","time":"2025-01-24T18:36:21.185Z","caller":"globalconfigvalidator/setup.go:45","msg":"Found user credentials in env and cli flag both, credentials in env will be ignored"}
+{"level":"warn","time":"2025-01-24T18:36:21.185Z","caller":"globalconfigvalidator/setup.go:50","msg":"Found key credentials in env and cli flag both, credentials in env will be ignored"}
+{"level":"debug","time":"2025-01-24T18:36:22.279Z","caller":"core/lifecycle.go:104","msg":"Setting environment"}
+{"level":"debug","time":"2025-01-24T18:36:22.279Z","caller":"core/lifecycle.go:107","msg":"Parsing config"}
+{"level":"debug","time":"2025-01-24T18:36:22.279Z","caller":"yamlconfigmanager/setup.go:671","msg":"Custom location for .hyperexecute.yaml specified. Using: ../win11/.hyperexecute_autosplits.yaml"}
+{"level":"error","time":"2025-01-24T18:36:22.279Z","caller":"core/lifecycle.go:112","msg":"2025-01-24T18:36:20Z    error    \u001b[91mERR::NO::HTY\u001b[0m     Unable to find hyperexecute config file.    No file found at location ../win11/.hyperexecute_autosplits.yaml"}
+{"level":"debug","time":"2025-01-24T18:36:22.279Z","caller":"core/lifecycle.go:55","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2025-01-24T18:36:22.279Z","caller":"core/lifecycle.go:56","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2025-01-24T18:36:22.279Z","caller":"core/lifecycle.go:59","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2025-01-24T18:36:22.279Z","caller":"cmd/bin.go:369","msg":"Exiting application due to error \u001b[91mERR::NO::HTY\u001b[0m     Unable to find hyperexecute config file.    No file found at location ../win11/.hyperexecute_autosplits.yaml"}
