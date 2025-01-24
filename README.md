@@ -60,3 +60,7 @@ For running all scenarios using .gitpod.yml
 
 License
 -This project is licensed under the MIT License.
+
+set HYPEREXECUTE_PLATFORM=windows
+set LT_USERNAME=parth.pateltntra
+set LT_ACCESS_KEY=e5NcBKPoyQpKuhwZQZXnQgRnvGaEQkwhoklJPG54Y3VIqCz540
